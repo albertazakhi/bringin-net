@@ -42,6 +42,8 @@ body {
   font-weight: 700;
   color: #fff;
   font-style: italic;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .navbar .navbar-logo span {
@@ -53,6 +55,9 @@ body {
   display: inline-block;
   font-size: 1.3rem;
   margin: 0 1rem;
+  opacity: 0;
+  animation: slideTop 0.7s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .navbar .navbar-nav a:hover {
@@ -118,6 +123,8 @@ body {
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
 }
 
 .hero .content h1 span {
@@ -131,6 +138,8 @@ body {
   font-weight: 100;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
   mix-blend-mode: difference;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .hero .content .cta {
@@ -145,6 +154,8 @@ body {
 .hero .content a {
   color: #fff;
   background-color: var(--primary);
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
 }
 
 .hero .content a:hover {
@@ -423,5 +434,42 @@ footer .credit a {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+}
+
+/* keyframe animation */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
