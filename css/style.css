@@ -175,6 +175,8 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
 }
 
 .about h2 span {
@@ -193,6 +195,8 @@ body {
   width: 100%;
   border-radius: 10%;
   box-shadow: 2px 2px 4px #00ffff;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .about .row .content {
@@ -203,6 +207,8 @@ body {
 .about .row .content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .about .row .content p {
@@ -210,6 +216,8 @@ body {
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.6;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
 }
 
 /* Menu Section */
@@ -229,6 +237,8 @@ body {
   margin: auto;
   font-weight: 100;
   line-height: 1.6;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
 }
 
 .menu .row {
@@ -241,6 +251,8 @@ body {
 .menu .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
 }
 
 .menu .row .menu-card img {
@@ -250,6 +262,10 @@ body {
 
 .menu .row .menu-card .menu-card-title {
   margin-top: 1rem auto 0.5rem;
+}
+
+.menu .row .menu-card .menu-card-price {
+  animation: slideBottom 1s ease forwards;
 }
 
 /* Contact Section */
