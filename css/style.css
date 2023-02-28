@@ -37,17 +37,10 @@ body {
   z-index: 9999;
 }
 
-.navbar .navbar-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  font-style: italic;
+.navbar img {
+  height: 5vh;
   opacity: 0;
   animation: slideRight 1s ease forwards;
-}
-
-.navbar .navbar-logo span {
-  color: var(--primary);
 }
 
 .navbar .navbar-nav a {
