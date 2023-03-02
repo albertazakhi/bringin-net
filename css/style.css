@@ -337,6 +337,13 @@ body {
   box-shadow: none;
 }
 
+.contact .row form .my-alert {
+  display: none;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
 /* Footer */
 footer {
   background-color: var(--primary);
