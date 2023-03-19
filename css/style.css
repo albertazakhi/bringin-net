@@ -172,10 +172,14 @@ body {
 }
 
 /* Abaut section */
-.about,
+.about {
+  min-height: 100vh;
+  padding: 10rem 7% 1.4rem;
+}
+
 .menu,
 .contact {
-  padding: 10rem 7% 1.4rem;
+  padding: 10rem 7% 0rem;
 }
 
 .about h2,
