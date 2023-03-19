@@ -113,21 +113,23 @@ h2 {
 }
 
 button {
+  margin-top: 15px;
   width: 100%;
   height: 40px;
-  background: #fff;
-  border: none;
+  background: transparent;
+  border: 2px solid rgba(225, 225, 255, 0.5);
   outline: none;
   border-radius: 40px;
   cursor: pointer;
   font-size: 1em;
-  color: #000;
+  color: #fff;
   font-weight: 500;
 }
 
 button:hover {
-  background: #0073ff;
-  color: #fff;
+  background: rgb(0, 115, 255);
+  border: 2px solid rgba(0, 115, 255, 0.5);
+  /* color: #fff; */
 }
 
 .register-link {
@@ -153,7 +155,7 @@ button:hover {
     height: 100vh;
     border: none;
     border-radius: 0;
-    font-size: 55%;
+    font-size: 80%;
   }
 
   .input-box {
