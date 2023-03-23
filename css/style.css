@@ -71,10 +71,10 @@ body {
 }
 
 /* .navbar .navbar-extra .login {
-  margin: 1rem;
+  margin: 0 1rem;
   display: inline-block;
-  padding: 0.5rem 2rem;
-  font-size: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
   border-radius: 1rem;
   color: #fff;
   background: transparent;
@@ -339,13 +339,6 @@ body {
 .contact .row form .btn:hover {
   background: var(--primary);
   box-shadow: none;
-}
-
-.contact .row form .my-alert {
-  display: none;
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--primary);
 }
 
 /* Footer */
