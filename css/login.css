@@ -87,7 +87,7 @@ h2 {
   position: absolute;
   right: 8px;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 57px;
 }
 
@@ -155,10 +155,26 @@ button:hover {
     height: 100vh;
     border: none;
     border-radius: 0;
-    font-size: 80%;
+    /* font-size: 80%; */
   }
 
   .input-box {
     width: 290px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .input-box label,
+  .input-box input,
+  .input-box .icon,
+  button,
+  .register-link {
+    font-size: 1.7rem;
+  }
+
+  .remember-forgot {
+    font-size: 1.2rem;
   }
 }

@@ -49,7 +49,7 @@ body {
   font-size: 1.3rem;
   margin: 0 1rem;
   opacity: 0;
-  animation: slideTop 0.7s ease forwards;
+  animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
 
@@ -74,7 +74,7 @@ body {
   margin: 0 0.5rem;
   color: #fff;
   opacity: 0;
-  animation: slideRight 0.5s ease forwards;
+  animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
 /* .navbar .navbar-extra .login {
@@ -138,8 +138,8 @@ body {
   height: 100vh;
   width: 35rem;
   padding: 0 1.5rem;
-  background: transparent;
-  backdrop-filter: blur(30px);
+  background: #000000ae;
+  backdrop-filter: blur(10px);
   color: #fff;
   transition: 0.3s linear;
 }
@@ -558,11 +558,14 @@ footer .credit a:hover {
 
 .modal-container {
   position: relative;
-  background-color: #fefefe;
+  background: #fefefe;
+  box-shadow: 3px 3px 6px #0073ffe0;
+  border-radius: 20px;
+  /* backdrop-filter: blur(15px); */
   color: var(--bg);
   margin: 15% auto;
   padding: 1.2rem;
-  border: 1px solid #666;
+  border: 1px solid #0073ff;
   width: 80%;
   animation: animateModal 0.5s;
 }
@@ -591,9 +594,10 @@ footer .credit a:hover {
 }
 
 .modal-content img {
-  height: 20rem;
+  height: 20vh;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  border-radius: 15px;
 }
 
 .modal-content p {
@@ -608,6 +612,7 @@ footer .credit a:hover {
   width: 12rem;
   background-color: var(--primary);
   color: #fff;
+  border-radius: 20px;
   margin-top: 1rem;
   padding: 1rem 1.6rem;
 }
@@ -622,7 +627,7 @@ footer .credit a:hover {
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 70%;
   }
 
   #hamburger-menu {
@@ -633,8 +638,8 @@ footer .credit a:hover {
     position: absolute;
     top: 100%;
     right: -100%;
-    background: transparent;
-    backdrop-filter: blur(15px);
+    background: #000000ae;
+    backdrop-filter: blur(10px);
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
