@@ -101,7 +101,9 @@ body {
   position: absolute;
   top: 100%;
   right: 7%;
+  /* background-color: #fff; */
   background-color: #fff;
+  border-radius: 50px;
   width: 30rem;
   height: 5rem;
   display: flex;
@@ -120,6 +122,8 @@ body {
   width: 100%;
   font-size: 1.6rem;
   color: var(--bg);
+  background-color: #fff;
+  border-radius: 50px;
   padding: 1rem;
 }
 
@@ -138,8 +142,7 @@ body {
   height: 100vh;
   width: 35rem;
   padding: 0 1.5rem;
-  background: #000000ae;
-  backdrop-filter: blur(10px);
+  background: #000000d0;
   color: #fff;
   transition: 0.3s linear;
 }
@@ -638,8 +641,7 @@ footer .credit a:hover {
     position: absolute;
     top: 100%;
     right: -100%;
-    background: #000000ae;
-    backdrop-filter: blur(10px);
+    background: #000000d0;
     width: 30rem;
     height: 100vh;
     transition: 0.3s;
@@ -666,7 +668,7 @@ footer .credit a:hover {
   }
 
   .navbar .search-form {
-    width: 90%;
+    width: 70%;
     right: 2rem;
   }
 
