@@ -5,39 +5,12 @@ document.querySelector('#hamburger-menu').onclick = () => {
   navbarNav.classList.toggle('active');
 };
 
-// Toggle class active untuk search form
-const searchForm = document.querySelector('.search-form');
-const searchBox = document.querySelector('#search-box');
-
-document.querySelector('#search-button').onclick = (e) => {
-  searchForm.classList.toggle('active');
-  searchBox.focus();
-  e.preventDefault();
-};
-
-//Toggle class active untuk shopping cart
-const shoppingCart = document.querySelector('.shopping-cart');
-document.querySelector('#shopping-cart-button').onclick = (e) => {
-  shoppingCart.classList.toggle('active');
-  e.preventDefault();
-};
-
 // Klik di luar element
 const hamburger = document.querySelector('#hamburger-menu');
-const sb = document.querySelector('#search-button');
-const sc = document.querySelector('#shopping-cart-button');
 
 document.addEventListener('click', function (e) {
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove('active');
-  }
-
-  if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
-    searchForm.classList.remove('active');
-  }
-
-  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
-    shoppingCart.classList.remove('active');
   }
 });
 
@@ -65,11 +38,28 @@ window.onclick = (e) => {
   }
 };
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwp0xHuen4_If4mLXnjtlZHU9mLJil1uMYSne1eHloxx1BuV7R8Xl-s9eYvHE32HqWGzA/exec';
+const form = document.forms['brn-contact-form'];
+const btnKirim = document.querySelector('.btn-kirim');
+const myAlert = document.querySelector('.ucapan');
+const loadingSpinner = document.querySelector('.loading-spinner');
+
+document.querySelector('.contact .close').onclick = (e) => {
+  myAlert.style.display = 'none';
+  e.preventDefault();
+};
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   // Ketika tombol kirim di klik
+  // tombol kirim hilang tombol loading tampil
+  loadingSpinner.style.display = 'inline-block';
+  btnKirim.style.display = 'none';
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then((response) => {
+      loadingSpinner.style.display = 'none';
+      btnKirim.style.display = 'inline-block';
+      myAlert.style.display = 'flex';
       form.reset();
       console.log('Success!', response);
     })
